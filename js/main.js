@@ -25,7 +25,7 @@ async function compileData() {
   const DATA = [ARTIST_INPUT.value, ALBUM_INPUT.value]
   if (ARTIST_INPUT.value && ALBUM_INPUT.value) {
     console.log("Invoked Lambda")
-    const albumArray = await invokeLambda(DATA, LAMBDA_URL);
+    const albumArray = JSON.parse(await invokeLambda(DATA, LAMBDA_URL));
     console.log(albumArray);
     ALBUM_IMAGE.src = albumArray.url;
     ALBUM_NAME.innerHTML = albumArray.description;
