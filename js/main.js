@@ -4,7 +4,7 @@ const ALBUM_IMAGE = document.getElementById("album-img");
 const ALBUM_NAME = document.getElementById("album-name");
 const ALBUM_DESCRIPTION = document.getElementById("album-description");
 const SUBMIT = document.getElementById("submit");
-const LAMBDA_URL = "https://ukc8unbj0d.execute-api.us-east-1.amazonaws.com/nesh";
+const LAMBDA_URL = "https://y22tcg9j99.execute-api.us-east-1.amazonaws.com/beta";
 
 
 [ARTIST_INPUT, ALBUM_INPUT].forEach( (element) => {
